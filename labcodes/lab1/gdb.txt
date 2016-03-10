@@ -1,0 +1,200 @@
+
+post-prompt
+
+breakpoints-headers
+
+field 0
+Num     
+field 1
+Type           
+field 2
+Disp 
+field 3
+Enb 
+field 4
+Address    
+field 5
+What
+
+breakpoints-table
+
+record
+
+field 0
+1       
+field 1
+breakpoint     
+field 2
+keep 
+field 3
+y   
+field 4
+0x00007c00 
+field 5
+
+	breakpoint already hit 1 time
+
+breakpoints-table-end
+
+post-prompt
+=> 0x7c00:	cli    
+   0x7c01:	cld    
+   0x7c02:	xor    %eax,%eax
+   0x7c04:	mov    %eax,%ds
+   0x7c06:	mov    %eax,%es
+   0x7c08:	mov    %eax,%ss
+   0x7c0a:	in     $0x64,%al
+   0x7c0c:	test   $0x2,%al
+   0x7c0e:	jne    0x7c0a
+   0x7c10:	mov    $0xd1,%al
+   0x7c12:	out    %al,$0x64
+   0x7c14:	in     $0x64,%al
+   0x7c16:	test   $0x2,%al
+   0x7c18:	jne    0x7c14
+   0x7c1a:	mov    $0xdf,%al
+   0x7c1c:	out    %al,$0x60
+   0x7c1e:	lgdtl  (%esi)
+   0x7c21:	insb   (%dx),%es:(%edi)
+   0x7c22:	jl     0x7c33
+   0x7c24:	and    %al,%al
+   0x7c26:	or     $0x1,%ax
+   0x7c2a:	mov    %eax,%cr0
+   0x7c2d:	ljmp   $0xb866,$0x87c32
+   0x7c34:	adc    %al,(%eax)
+   0x7c36:	mov    %eax,%ds
+   0x7c38:	mov    %eax,%es
+   0x7c3a:	mov    %eax,%fs
+   0x7c3c:	mov    %eax,%gs
+   0x7c3e:	mov    %eax,%ss
+   0x7c40:	
+error-begin
+Remote connection closed
+
+error
+
+post-prompt
+
+breakpoints-headers
+
+field 0
+Num     
+field 1
+Type           
+field 2
+Disp 
+field 3
+Enb 
+field 4
+Address    
+field 5
+What
+
+breakpoints-table
+
+record
+
+field 0
+1       
+field 1
+breakpoint     
+field 2
+keep 
+field 3
+y   
+field 4
+0x00007c00 
+field 5
+
+	breakpoint already hit 1 time
+
+breakpoints-table-end
+Error detected on fd 0
+error detected on stdin
+=> 0x7c00:	cli    
+   0x7c01:	cld    
+   0x7c02:	xor    %eax,%eax
+   0x7c04:	mov    %eax,%ds
+   0x7c06:	mov    %eax,%es
+   0x7c08:	mov    %eax,%ss
+   0x7c0a:	in     $0x64,%al
+   0x7c0c:	test   $0x2,%al
+   0x7c0e:	jne    0x7c0a
+   0x7c10:	mov    $0xd1,%al
+   0x7c12:	out    %al,$0x64
+   0x7c14:	in     $0x64,%al
+   0x7c16:	test   $0x2,%al
+   0x7c18:	jne    0x7c14
+   0x7c1a:	mov    $0xdf,%al
+   0x7c1c:	out    %al,$0x60
+   0x7c1e:	lgdtl  (%esi)
+   0x7c21:	insb   (%dx),%es:(%edi)
+   0x7c22:	jl     0x7c33
+   0x7c24:	and    %al,%al
+   0x7c26:	or     $0x1,%ax
+   0x7c2a:	mov    %eax,%cr0
+   0x7c2d:	ljmp   $0xb866,$0x87c32
+   0x7c34:	adc    %al,(%eax)
+   0x7c36:	mov    %eax,%ds
+   0x7c38:	mov    %eax,%es
+   0x7c3a:	mov    %eax,%fs
+   0x7c3c:	mov    %eax,%gs
+   0x7c3e:	mov    %eax,%ss
+   0x7c40:	mov    $0x0,%ebp
+   0x7c45:	mov    $0x7c00,%esp
+   0x7c4a:	call   0x7cd1
+
+post-prompt
+
+post-prompt
+
+breakpoints-headers
+
+field 0
+Num     
+field 1
+Type           
+field 2
+Disp 
+field 3
+Enb 
+field 4
+Address    
+field 5
+What
+
+breakpoints-table
+
+record
+
+field 0
+1       
+field 1
+breakpoint     
+field 2
+keep 
+field 3
+y   
+field 4
+0x00007c00 
+field 5
+
+	breakpoint already hit 1 time
+
+breakpoints-table-end
+
+post-prompt
+
+error-begin
+No symbol table is loaded.  Use the "file" command.
+
+error
+
+post-prompt
+No line number information available.
+Error detected on fd 0
+error detected on stdin
+
+error-begin
+Remote connection closed
+
+error
