@@ -66,3 +66,5 @@ typedef size_t ppn_t;
 
 #endif /* !__LIBS_DEFS_H__ */
 
+#TEST
+    
